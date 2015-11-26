@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,11 +18,59 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What is your Mood?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="NzH-hp-v2h">
+                                <rect key="frame" x="20" y="270" width="560" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuI-Sl-rHi">
+                                <rect key="frame" x="194" y="396" width="65" height="30"/>
+                                <state key="normal" title="Energetic"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWT-ux-8Bc">
+                                <rect key="frame" x="363" y="396" width="56" height="30"/>
+                                <state key="normal" title="Calming"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dq-QI-8pr">
+                                <rect key="frame" x="47" y="396" width="54" height="30"/>
+                                <state key="normal" title="Relaxed"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YuI-Sl-rHi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Yp-dj-4Os"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2dq-QI-8pr" secondAttribute="bottom" id="8bv-LL-Xq1"/>
+                            <constraint firstItem="YuI-Sl-rHi" firstAttribute="top" secondItem="NzH-hp-v2h" secondAttribute="bottom" multiplier="1.25" id="FeS-Vx-9c6"/>
+                            <constraint firstItem="NzH-hp-v2h" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Fgi-so-keM"/>
+                            <constraint firstItem="YuI-Sl-rHi" firstAttribute="leading" secondItem="2dq-QI-8pr" secondAttribute="trailing" multiplier="1.75" id="IAJ-B0-rNl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GWT-ux-8Bc" secondAttribute="trailing" id="J0T-WU-9nH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NzH-hp-v2h" secondAttribute="trailing" id="KHM-Ov-b3o"/>
+                            <constraint firstItem="NzH-hp-v2h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RvQ-4e-VEK"/>
+                            <constraint firstItem="GWT-ux-8Bc" firstAttribute="top" secondItem="NzH-hp-v2h" secondAttribute="bottom" multiplier="1.25" id="UdC-zD-wIf"/>
+                            <constraint firstItem="NzH-hp-v2h" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" multiplier="0.25" id="Ypu-Ni-woZ"/>
+                            <constraint firstItem="2dq-QI-8pr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Zbv-tM-fzR"/>
+                            <constraint firstItem="2dq-QI-8pr" firstAttribute="height" secondItem="YuI-Sl-rHi" secondAttribute="height" id="a3x-pO-qUU"/>
+                            <constraint firstItem="GWT-ux-8Bc" firstAttribute="leading" secondItem="YuI-Sl-rHi" secondAttribute="trailing" multiplier="1.25" id="nLk-RP-a5r"/>
+                            <constraint firstItem="YuI-Sl-rHi" firstAttribute="height" secondItem="GWT-ux-8Bc" secondAttribute="height" id="xLk-kd-ISG"/>
+                            <constraint firstItem="2dq-QI-8pr" firstAttribute="top" secondItem="NzH-hp-v2h" secondAttribute="bottom" multiplier="1.25" id="yWY-JQ-qpP"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8Yp-dj-4Os"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="calming" destination="GWT-ux-8Bc" id="YBD-67-5VG"/>
+                        <outlet property="energetic" destination="YuI-Sl-rHi" id="Ogu-Zw-PXh"/>
+                        <outlet property="relaxed" destination="2dq-QI-8pr" id="ERu-TT-S6d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="294"/>
         </scene>
     </scenes>
 </document>

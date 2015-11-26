@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var relaxed: UIButton!
+    
+    @IBOutlet weak var energetic: UIButton!
+    
+    @IBOutlet weak var calming: UIButton!
+    
     let playStartSong = Song.sharedInstance    //Move the constant assignment in here to prevent reinstantiating
     
     override func viewDidLoad() {
@@ -18,7 +24,7 @@ class ViewController: UIViewController {
         
         //Plays gameplay song
         playStartSong.prepareAudios()
-        playStartSong.song.play()   //Keeps getting called
+    playStartSong.song.play()   //Keeps getting called
     }
 
     override func didReceiveMemoryWarning() {
