@@ -27,11 +27,33 @@ class Song {
     }
     
     func prepareAudios() {
-        
-        let path = NSBundle.mainBundle().pathForResource("Shut Up and Dance", ofType: "mp3")
+        let path = NSBundle.mainBundle().pathForResource("Nightingale", ofType: "mp3")
         song = try! AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path!))
         song.prepareToPlay()
         
         song.numberOfLoops = -1 //Makes the song play repeatedly
     }
+//    
+//    func prepareAudiosRelaxing() {
+//        let path = NSBundle.mainBundle().pathForResource("Nightingale", ofType: "mp3")
+//        song = try! AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path!))
+//        song.prepareToPlay()
+//        
+//        song.numberOfLoops = -1 //Makes the song play repeatedly
+//    }
+//    
+//    func prepareAudiosEnergetic() {
+//        let path = NSBundle.mainBundle().pathForResource("Menu 01", ofType: "mp3")
+//        song = try! AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path!))
+//        song.prepareToPlay()
+//        
+//        song.numberOfLoops = -1 //Makes the song play repeatedly
+//    }
+//    func prepareAudiosCalming() {
+//        let path = NSBundle.mainBundle().pathForResource("Primavera", ofType: "mp3")
+//        song = try! AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path!))
+//        song.prepareToPlay()
+//        
+//        song.numberOfLoops = -1 //Makes the song play repeatedly
+//    }
 }

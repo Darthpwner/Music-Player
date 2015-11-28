@@ -10,21 +10,51 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var relaxed: UIButton!
+//    var isRelaxed = false;
+//    var isEnergetic = false;
+//    var isCalming = false;
+//   
+//    @IBAction func relaxedTap(sender: AnyObject) {
+//        isRelaxed = true
+//        isEnergetic = false
+//        isCalming = false
+//    }
+//    
+//    
+//    @IBAction func energeticTap(sender: AnyObject) {
+//        isRelaxed = false
+//        isEnergetic = true
+//        isCalming = false
+//    }
+//    
+//    
+//    @IBAction func calmingTap(sender: AnyObject) {
+//        isRelaxed = false
+//        isEnergetic = false
+//        isCalming = true;
+//    }
     
-    @IBOutlet weak var energetic: UIButton!
     
-    @IBOutlet weak var calming: UIButton!
     
-    let playStartSong = Song.sharedInstance    //Move the constant assignment in here to prevent reinstantiating
     
     override func viewDidLoad() {
+        let playStartSong = Song.sharedInstance    //Move the constant assignment in here to prevent reinstantiating
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        print("FUCK")
+        
         //Plays gameplay song
+//        if(isRelaxed) {
+//            playStartSong.prepareAudiosRelaxing()
+//        } else if(isEnergetic) {
+//            playStartSong.prepareAudiosEnergetic()
+//        } else if(isCalming){
+//            playStartSong.prepareAudiosCalming()
         playStartSong.prepareAudios()
-    playStartSong.song.play()   //Keeps getting called
+        
+        playStartSong.song.play()   //Keeps getting called
     }
 
     override func didReceiveMemoryWarning() {

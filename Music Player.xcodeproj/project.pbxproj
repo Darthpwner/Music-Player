@@ -16,9 +16,9 @@
 		6B0695BC1C067111003E42A1 /* Music_PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0695BB1C067111003E42A1 /* Music_PlayerTests.swift */; };
 		6B0695C71C067111003E42A1 /* Music_PlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0695C61C067111003E42A1 /* Music_PlayerUITests.swift */; };
 		6B0695D51C067159003E42A1 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0695D41C067159003E42A1 /* Song.swift */; };
-		6B0695D91C06DB25003E42A1 /* Shut Up and Dance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B0695D81C06DB25003E42A1 /* Shut Up and Dance.mp3 */; };
-		6B0695DB1C06DB37003E42A1 /* Primavera.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B0695DA1C06DB37003E42A1 /* Primavera.mp3 */; };
-		6B0695DD1C06DB47003E42A1 /* Nightingale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B0695DC1C06DB47003E42A1 /* Nightingale.mp3 */; };
+		6BEFCC041C097DBF003E4641 /* Primavera.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6BEFCC031C097DBF003E4641 /* Primavera.mp3 */; };
+		6BEFCC081C097DD9003E4641 /* Nightingale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6BEFCC071C097DD9003E4641 /* Nightingale.mp3 */; };
+		6BEFCC0C1C098C09003E4641 /* Menu 01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6BEFCC0B1C098C09003E4641 /* Menu 01.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +54,9 @@
 		6B0695C61C067111003E42A1 /* Music_PlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_PlayerUITests.swift; sourceTree = "<group>"; };
 		6B0695C81C067111003E42A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B0695D41C067159003E42A1 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
-		6B0695D81C06DB25003E42A1 /* Shut Up and Dance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Shut Up and Dance.mp3"; path = "../../../Music/iTunes/iTunes Media/Music/WALK THE MOON/Billboard Top 25 Hot Rock Songs (10-01-2015)/Shut Up and Dance.mp3"; sourceTree = "<group>"; };
-		6B0695DA1C06DB37003E42A1 /* Primavera.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Primavera.mp3; path = "../../../Music/iTunes/iTunes Media/Music/Ludovico Einaudi/Diveniere/Primavera.mp3"; sourceTree = "<group>"; };
-		6B0695DC1C06DB47003E42A1 /* Nightingale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Nightingale.mp3; path = "../../../Music/iTunes/iTunes Media/Music/Yanni/PureTune.net/Nightingale.mp3"; sourceTree = "<group>"; };
+		6BEFCC031C097DBF003E4641 /* Primavera.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Primavera.mp3; path = "../../../Music/iTunes/iTunes Media/Music/Ludovico Einaudi/Diveniere/Primavera.mp3"; sourceTree = "<group>"; };
+		6BEFCC071C097DD9003E4641 /* Nightingale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Nightingale.mp3; path = "../../../Music/iTunes/iTunes Media/Music/Yanni/PureTune.net/Nightingale.mp3"; sourceTree = "<group>"; };
+		6BEFCC0B1C098C09003E4641 /* Menu 01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Menu 01.mp3"; path = "../../../Music/iTunes/iTunes Media/Music/Nintendo/Super Smash Brothers Brawl OST/Menu 01.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +115,9 @@
 				6B0695AF1C067110003E42A1 /* LaunchScreen.storyboard */,
 				6B0695B21C067110003E42A1 /* Info.plist */,
 				6B0695AA1C067110003E42A1 /* Music_Player.xcdatamodeld */,
-				6B0695DC1C06DB47003E42A1 /* Nightingale.mp3 */,
-				6B0695DA1C06DB37003E42A1 /* Primavera.mp3 */,
-				6B0695D81C06DB25003E42A1 /* Shut Up and Dance.mp3 */,
+				6BEFCC0B1C098C09003E4641 /* Menu 01.mp3 */,
+				6BEFCC031C097DBF003E4641 /* Primavera.mp3 */,
+				6BEFCC071C097DD9003E4641 /* Nightingale.mp3 */,
 			);
 			path = "Music Player";
 			sourceTree = "<group>";
@@ -244,12 +244,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B0695D91C06DB25003E42A1 /* Shut Up and Dance.mp3 in Resources */,
 				6B0695B11C067110003E42A1 /* LaunchScreen.storyboard in Resources */,
-				6B0695DD1C06DB47003E42A1 /* Nightingale.mp3 in Resources */,
+				6BEFCC0C1C098C09003E4641 /* Menu 01.mp3 in Resources */,
 				6B0695AE1C067110003E42A1 /* Assets.xcassets in Resources */,
+				6BEFCC081C097DD9003E4641 /* Nightingale.mp3 in Resources */,
 				6B0695A91C067110003E42A1 /* Main.storyboard in Resources */,
-				6B0695DB1C06DB37003E42A1 /* Primavera.mp3 in Resources */,
+				6BEFCC041C097DBF003E4641 /* Primavera.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +504,7 @@
 				6B0695CD1C067111003E42A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B0695CE1C067111003E42A1 /* Build configuration list for PBXNativeTarget "Music PlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +513,7 @@
 				6B0695D01C067111003E42A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B0695D11C067111003E42A1 /* Build configuration list for PBXNativeTarget "Music PlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +522,7 @@
 				6B0695D31C067111003E42A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
