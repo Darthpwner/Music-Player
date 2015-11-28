@@ -36,7 +36,6 @@
                                 <state key="normal" title="Relaxed"/>
                                 <connections>
                                     <action selector="relaxedTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JMt-7H-qTJ"/>
-                                    <action selector="relaxedTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OIE-1k-WOm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuI-Sl-rHi">
@@ -71,11 +70,6 @@
                             </mask>
                         </variation>
                     </view>
-                    <connections>
-                        <outlet property="calming" destination="GWT-ux-8Bc" id="YBD-67-5VG"/>
-                        <outlet property="energetic" destination="YuI-Sl-rHi" id="Ogu-Zw-PXh"/>
-                        <outlet property="relaxed" destination="2dq-QI-8pr" id="QcY-gI-Gpb"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
